@@ -1,0 +1,9 @@
+### Creating a new user
+POST http://localhost:8000/createUser
+Content-Type: application/json
+
+{
+  "name": "Matheus Prates",
+  "email": "test@gmail.com"
+}
+

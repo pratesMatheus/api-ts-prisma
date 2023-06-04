@@ -1,0 +1,26 @@
+### Creating a new post
+POST http://localhost:8000/createPost
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "5° P/ Deletar: Titulo teste para Post de teste",
+  "content": "Conteúdo de teste para Post de teste. Conteúdo de teste para Post de teste. Conteúdo de teste para Post de teste. Conteúdo de teste para Post de teste."
+}
+
+### List a single Post
+GET http://localhost:8000/listPost/3
+
+### Update a Post
+PUT http://localhost:8000/updatePost
+Content-Type: application/json
+
+{
+  "id": 3,
+  "title": "3° Updated Content: Titulo teste para Post",
+  "content": "Conteúdo de teste para Post de teste. Conteúdo de teste para Post de teste. Conteúdo de teste para Post de teste. Conteúdo de teste para Post de teste."
+}
+
+### Delete a single Post
+DELETE  http://localhost:8000/deletePost/5
+Content-Type: application/json
